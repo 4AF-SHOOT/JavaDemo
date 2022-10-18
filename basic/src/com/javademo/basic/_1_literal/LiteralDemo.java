@@ -1,4 +1,4 @@
-package com.javademo.basic.literal;
+package com.javademo.basic._1_literal;
 
 public class LiteralDemo {
     public static void main(String[] args) {

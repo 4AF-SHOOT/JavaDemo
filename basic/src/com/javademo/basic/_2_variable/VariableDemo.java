@@ -1,4 +1,4 @@
-package com.javademo.basic.variable;
+package com.javademo.basic._2_variable;
 
 public class VariableDemo {
     public static void main(String[] args) {

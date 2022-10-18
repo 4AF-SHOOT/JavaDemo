@@ -1,6 +1,4 @@
-package com.javademo.basic.variable;
-
-import sun.lwawt.macosx.CSystemTray;
+package com.javademo.basic._2_variable;
 
 public class DataType {
     public static void main(String[] args) {
