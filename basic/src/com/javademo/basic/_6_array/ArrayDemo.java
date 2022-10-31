@@ -13,6 +13,7 @@ public class ArrayDemo {
         // 1. 静态初始化数组
         // 2. 动态初始化数组
         // 3. 数组的遍历  for循环
+        // 4. 常见问题
 
 
         // 1. 静态初始化数组
@@ -92,16 +93,39 @@ public class ArrayDemo {
 //        }
 
 
-        int[] nums = {1, 2, 3, 4, 5};
-        for (int i = 0; i < nums.length; i++) {
-            int index = random.nextInt(nums.length);
-            int temp = nums[i];
-            nums[i] = nums[index];
-            nums[index] = temp;
+//        int[] nums = {1, 2, 3, 4, 5};
+//        for (int i = 0; i < nums.length; i++) {
+//            int index = random.nextInt(nums.length);
+//            int temp = nums[i];
+//            nums[i] = nums[index];
+//            nums[index] = temp;
+//        }
+//        for (int i = 0; i < nums.length; i++) {
+//            System.out.print(nums[i] + "\t");
+//        }
+
+        int[] nums = {3, 6, 1, 2, 5, 4};
+        for (int i = 0; i < nums.length-1; i++) {
+            for (int j = 0; j < nums.length - i - 1; j++) {
+                int temp;
+                if (nums[j] > nums[j + 1]) {
+                    temp = nums[j];
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = temp;
+                }
+            }
         }
+        System.out.println("冒泡：");
         for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + "\t");
+            System.out.println(nums[i]);
         }
+
+
+        // 4. 常见问题
+        /*
+            1. 数组越界: ArrayIndexOutOfBoundsException
+            2. 空指针异常: NullPointerException
+         */
 
     }
 }
