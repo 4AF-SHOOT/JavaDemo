@@ -1,11 +1,12 @@
-package com.javademo.basic._9_1_object;
+package com.javademo.basic._9_1_object_basic;
 
-public class Class {
+public class _1_1_Class {
     public static void main(String[] args) {
+        // 面向对象编程：oop
         // 面向对象 - 设计类
         /*
             类：是共同特征的描述（设计图）
-            对象：是真实存在的具体实例
+            对象：是真实存在的具体实例；对象 == 实例
          */
 
         /*
@@ -46,7 +47,7 @@ public class Class {
          */
 
 
-        ClassDemo_Car car = new ClassDemo_Car();
+        _1_2_ClassDemo_Car car = new _1_2_ClassDemo_Car();
         car.name = "宝马";
         car.price = 200;
 
@@ -55,7 +56,7 @@ public class Class {
         car.start();
         car.run();
 
-        ClassDemo_Car car2 = new ClassDemo_Car();
+        _1_2_ClassDemo_Car car2 = new _1_2_ClassDemo_Car();
         car2.name = "123";
         System.out.println(car2.name);
     }

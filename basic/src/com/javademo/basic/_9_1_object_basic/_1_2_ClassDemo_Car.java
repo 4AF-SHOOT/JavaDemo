@@ -1,6 +1,6 @@
-package com.javademo.basic._9_1_object;
+package com.javademo.basic._9_1_object_basic;
 
-public class ClassDemo_Car {
+public class _1_2_ClassDemo_Car {
     /**
      * 成员变量
      */
